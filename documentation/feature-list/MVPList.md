@@ -12,8 +12,7 @@ you're not ready to commit, and also become a new user if you are.
 
 ## Browsing Capabilities
 ### Sneaker Listing Page
-* This page is simply where you come to shop for kicks and also doubles as the
-* first page that you see after logging in.
+* This page is simply where you come to shop for kicks and also doubles as the first page that you see after logging in.
 
 ### Product Page
 * The product page is where you end up after clicking on a specific shoe from
