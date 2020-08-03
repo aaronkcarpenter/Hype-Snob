@@ -5,14 +5,14 @@
 
 ## Styles Page
 
-* This page is a curation of images around the web of users enjoying the
+* This page is a curated conglomerate of images around the web of users enjoying the
 latest pair of rare sneakers
 
 ### Shoe Listing Page
 
 ### Product Page
 
-### Stretch Features
+# Stretch Features
 
 ### Shoe Purchase Option
 
