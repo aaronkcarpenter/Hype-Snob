@@ -31,3 +31,7 @@
 
 * listings
   * GET /api/sneakers/:id/listings/:listing_id  Returns individual listing on a sneaker product page
+
+## API Used
+
+  * https://thesneakerdatabase.com/api 
