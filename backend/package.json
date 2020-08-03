@@ -20,6 +20,9 @@
     "helmet": "^4.0.0",
     "http-errors": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "pg": "^8.3.0",
+    "sequelize": "^6.3.4",
+    "sequelize-cli": "^6.2.0"
   }
 }

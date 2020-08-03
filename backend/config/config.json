@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "aaroncarpenter",
+    "password": "227714aC15",
+    "database": "hypesnob_development",
+    "host": "localhost",
+    "dialect": "postgres",
+    "seederStorage": "sequelize"
+  },
+  "test": {
+    "username": "aaroncarpenter",
+    "password": "227714aC15",
+    "database": "hypesnob_test",
+    "host": "localhost",
+    "dialect": "postgres",
+    "seederStorage": "sequelize"
+  },
+  "production": {
+    "dialect": "postgres",
+    "seederStorage": "sequelize",
+    "use_env_variable": "DATABASE_URL"
+  }
+}
