@@ -2,10 +2,23 @@ const express = require('express');
 
 const router = express.Router();
 
-const asyncHandler = (handler) => (req, res, next) => handler(req, res, next).catch(next);
+const db = require("../db/models");
+const Op = require('sequelize').Op;
+
+const { check, validationResult } = require('express-validator');
+const { asyncHandler, handleValidationErrors } = require('./utils');
+// const { requireAuth } = require('../authorization');
 
 router.get('/shop', asyncHandler(async (req, res) => {
   res.send('Shopping Page');
 }));
+
+// router.get("/shop", asyncHandler(async (req, res) => {
+//   const sneakers = await db.Sneaker.findAll({
+//     include: [db.Brand, db.SneakerType]
+//   });
+//   res.json({ sneakers })
+// }));
+
 
 module.exports = router;
