@@ -5,8 +5,8 @@ const { port } = require('../config');
 const app = require('../app');
 const db = require('../db/models');
 const http = require('http');
-// const port = process.env.PORT || '3000';
-const server = http.createServer(port);
+app.set('port', port);
+const server = http.createServer(app);
 
 //Checking for a Database connection
 db.sequelize.authenticate()
