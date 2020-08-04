@@ -4,7 +4,6 @@
   "description": "",
   "main": "./bin/www",
   "scripts": {
-    // "start": "per-env",
     "start": "dotenv ./bin/www",
     "start:development": "nodemon -r dotenv/config ./bin/www",
     "start:production": "./bin/www",
