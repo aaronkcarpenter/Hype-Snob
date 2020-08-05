@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const { environment } = require('./config');
 const cors = require('cors');
 const bodyParser = require("body-parser");
+const db = require('./db/models');
+
 
 const home = require('./routes/index');
 const login = require('./routes/login');
