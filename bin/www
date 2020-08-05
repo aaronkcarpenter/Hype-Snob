@@ -13,12 +13,12 @@ server.listen(port);
 //Checking for a Database connection
 db.sequelize.authenticate()
     .then(()=> {
-        // console.log('Database connection success!');
+        console.log('Database connection success!');
 
         //Listening for a connection
-        // app.listen(port, ()=> console.log(`Listening on port ${port}...`));
+        app.listen(port, ()=> console.log(`Listening on port ${port}...`));
     })
     .catch((err) =>{
-        // console.log('Database connection failure..');
+        console.log('Database connection failure..');
         console.error(err)
     });

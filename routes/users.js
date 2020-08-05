@@ -34,18 +34,18 @@ router.post(
   "/",
   validateCreateUser,
   asyncHandler(async (req, res) => {
-    // console.log(req.body);
+    console.log(req.body);
     const { email, password, username, firstName, lastName } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
     const isEmail = await db.User.findOne({ where: { email: email } });
     const isUsername = await db.User.findOne({ where: { username: username } });
-    // console.log(
+    console.log(
       { email, password, username, firstName, lastName },
       hashedPassword
     );
 
     if (isEmail === null && isUsername === null) {
-      // console.log("This is isEmail: ", isEmail, "This is isUsername: ", isUsername)
+      console.log("This is isEmail: ", isEmail, "This is isUsername: ", isUsername)
       const user = await db.User.create({
         email,
         hashedPassword,
@@ -56,7 +56,7 @@ router.post(
         updatedAt: new Date(),
       });
 
-      // console.log("USER POSTED");
+      console.log("USER POSTED");
       const token = getUserToken(user);
 
       res.status(201).json({ user: { id: user.id, firstName: user.firstName }, token });
