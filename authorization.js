@@ -4,6 +4,23 @@ const { jwtConfig } = require("./config");
 const { secret, expiresIn } = jwtConfig;
 const bearerToken = require('express-bearer-token');
 
+const getUserToken = user => {
+  
+  const userDataForToken = {
+    id: user.id,
+    email: user.email,
+  };
+
+  //Creating the token
+  const token = jwt.sign(
+    { data: userDataForToken },
+    secret,
+    { expiresIn: parseInt(expiresIn, 10) }
+  );
+
+  return token;
+}
+
 const loginUser = (req, res, user) => {
   req.session.auth = {
     userId: user.id,

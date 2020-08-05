@@ -1,13 +1,17 @@
 #!/usr/bin/env node
 
-const { port } = require('../config');
-
 const app = require('../app');
 const db = require('../db/models');
 const http = require('http');
+
+const { port } = require('../config');
+
+
+// Get Port and store in Express
 app.set('port', port);
 const server = http.createServer(app);
 
+// Create the HTTP Server
 server.listen(port);
 
 //Checking for a Database connection

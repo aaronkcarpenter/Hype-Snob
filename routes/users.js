@@ -59,7 +59,7 @@ router.post(
       console.log("USER POSTED");
       const token = getUserToken(user);
 
-      res.status(201).json({ user: { id: user.id, firstName: user.firstName }, token });
+      res.status(201).json({ user: { id: user.id }, token });
     }
     const err = new Error("SignUp failed");
     err.status = 401;
@@ -74,6 +74,10 @@ router.post(
 router.get('/login', asyncHandler(async (req, res) => {
   res.send('Login Page');
 }));
+
+router.post('/', asyncHandler(async(req, res) => {
+
+}))
 
 
 module.exports = router;
