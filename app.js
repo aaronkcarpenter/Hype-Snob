@@ -10,10 +10,11 @@ const shop = require('./routes/shop');
 const signUp = require('./routes/signUp');
 const style = require('./routes/styles');
 const wantList = require('./routes/wantList');
+const users = require('./routes/users');
 
 const app = express();
-app.use(cors({ origin: true }));
 
+app.use(cors({ origin: true }));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors({ origin: true }));
@@ -26,6 +27,7 @@ app.use(shop);
 app.use(signUp);
 app.use(style);
 app.use(wantList);
+app.use('/users', users);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));

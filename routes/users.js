@@ -24,7 +24,7 @@ const validateEmailAndPassword = [
 ];
 
 const validateCreateUser = [
-  validateUsername,
+  // validateUsername,
   ...validateEmailAndPassword,
   handleValidationErrors
 ]
@@ -35,12 +35,12 @@ router.post(
   validateCreateUser,
   asyncHandler(async (req, res) => {
     console.log(req.body);
-    const { email, password, username, firstName, lastName } = req.body;
+    const { email, password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
     const isEmail = await db.User.findOne({ where: { email: email } });
     const isUsername = await db.User.findOne({ where: { username: username } });
     console.log(
-      { email, password, username, firstName, lastName },
+      { email, password },
       hashedPassword
     );
 
@@ -49,9 +49,6 @@ router.post(
       const user = await db.User.create({
         email,
         hashedPassword,
-        username,
-        firstName,
-        lastName,
         createdAt: new Date(),
         updatedAt: new Date(),
       });
@@ -74,10 +71,6 @@ router.post(
 router.get('/login', asyncHandler(async (req, res) => {
   res.send('Login Page');
 }));
-
-router.post('/', asyncHandler(async(req, res) => {
-
-}))
 
 
 module.exports = router;
