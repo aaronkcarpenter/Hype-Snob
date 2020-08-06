@@ -23,6 +23,17 @@
   text-decoration: none;
 }
 
+.logo{
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  font-family: 'Josefin Sans', serif;
+  font-weight: 700;
+  display: inline-block;
+  margin: 30px 0px 25px 0px;
+  letter-spacing: 8px;
+}
+
 .navbar__link--one{
   order: 1;
   font-size: 25px;

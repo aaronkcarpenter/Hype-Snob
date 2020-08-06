@@ -45,7 +45,8 @@ export class Navbar extends React.Component {
     return(
       <div>
         <ul className='Nav__Container'>
-          <li><a className='header__link navbar__link--one' href='https://www.hypesnob.herokuapp.com'>HYPESNOB</a></li>
+        <h1 className='logo'>HYPESNOB</h1>
+          {/* <li><a className='header__link navbar__link--one' href='https://www.hypesnob.herokuapp.com'>HYPESNOB</a></li> */}
           <li><a className='header__link navbar__link--two' href='https://www.hypesnob.herokuapp.com'>Discover</a></li>
           <li><a className='header__link navbar__link--three' href='https://www.hypesnob.herokuapp.com'>Shop All</a></li>
           <li><a className='header__link navbar__link--four' href='https://www.hypesnob.herokuapp.com'>Styles</a></li>

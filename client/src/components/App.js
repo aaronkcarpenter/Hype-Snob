@@ -3,6 +3,7 @@ import sneaker from '../api/sneaker';
 import Searchbar from './Searchbar';
 import SearchImages from './SearchImages';
 import { Navbar } from './Navbar';
+import LoginPage from './LoginPage';
 
 export class App extends Component {
   constructor(props) {
@@ -26,6 +27,7 @@ export class App extends Component {
         <Navbar />
         <Searchbar onSubmit={this.onSearchSubmit} />
         <SearchImages images={this.state.images} />
+        <LoginPage />
       </div>
     )
   }
