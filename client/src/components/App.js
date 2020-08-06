@@ -1,50 +1,52 @@
-import React, { Component } from 'react'
-import axios from 'axios';
+import React, { Component } from 'react';
+import sneaker from '../api/sneaker';
 import Searchbar from './Searchbar';
-// import { response } from '../../../app';
-
+import SearchImages from './SearchImages';
 
 export class App extends Component {
   constructor(props) {
     super(props)
   
-    this.state = {};
+    this.state = {
+      images: [],
+    };
   }
 
-  //WORKS 
-  // onSearchSubmit(term) {
-  //   axios.get('https://api.thesneakerdatabase.com/v1/sneakers?limit=100&gender=men', {
-  //     params: {
-  //       query: term 
-  //     },
-  //   });
-  // }
-
-  // WORKS
-  // onSearchSubmit(term) {
-  //   axios.get('https://api.thesneakerdatabase.com/v1/sneakers?limit=100&gender=men')
-  //     .then((response) => {
-  //       console.log(response.data.results);
-  //     });
-  // }
-
-  async  onSearchSubmit(term) {
-    const response = await axios.get('https://api.thesneakerdatabase.com/v1/sneakers?limit=100&gender=men')
+  onSearchSubmit = async (term) => {
+    const response = await sneaker.get('https://api.thesneakerdatabase.com/v1/sneakers?limit=100&gender=men')
     console.log(response.data.results);
+    
+    this.setState({ images: response.data.results });
   }
 
-
-  
   render() {
     return (
       <div className='ui container' style={{ marginTop: '10px' }}>
         <Searchbar onSubmit={this.onSearchSubmit} />
+        <SearchImages images={this.state.images} />
       </div>
     )
   }
-}
+};
 
 export default App
 
 
 
+
+//WORKS 
+// onSearchSubmit(term) {
+//   axios.get('https://api.thesneakerdatabase.com/v1/sneakers?limit=100&gender=men', {
+//     params: {
+//       query: term 
+//     },
+//   });
+// }
+
+// WORKS
+// onSearchSubmit(term) {
+//   axios.get('https://api.thesneakerdatabase.com/v1/sneakers?limit=100&gender=men')
+//     .then((response) => {
+//       console.log(response.data.results);
+//     });
+// }
