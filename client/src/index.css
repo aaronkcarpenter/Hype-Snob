@@ -1,0 +1,8 @@
+body {
+  background-color: #FFFFFF;
+}
+
+.Nav__Container{
+  height: 90px;
+  border: 1px solid black;
+}
