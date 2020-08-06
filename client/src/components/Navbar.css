@@ -1,0 +1,41 @@
+.Nav__Container{
+  height: 90px;
+  border: 1px solid black;
+  font-family: GT-Sectra-Book, serif;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__link{
+  font-family: Plain, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 5.71;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  color: black;
+  margin-right: 0px;
+  text-decoration: none;
+}
+
+.navbar__link--one{
+  order: 1;
+  font-size: 25px;
+}
+
+.navbar__link--two{
+  order: 2;
+}
+
+.navbar__link--three{
+  order: 3;
+}
+
+.navbar__link--four{
+  order: 4;
+}

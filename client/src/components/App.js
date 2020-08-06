@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import sneaker from '../api/sneaker';
 import Searchbar from './Searchbar';
 import SearchImages from './SearchImages';
+import { Navbar } from './Navbar';
 
 export class App extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ export class App extends Component {
   render() {
     return (
       <div className='ui container' style={{ marginTop: '10px' }}>
+        <Navbar />
         <Searchbar onSubmit={this.onSearchSubmit} />
         <SearchImages images={this.state.images} />
       </div>
