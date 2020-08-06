@@ -4,6 +4,9 @@ import Searchbar from './Searchbar';
 import SearchImages from './SearchImages';
 import { Navbar } from './Navbar';
 import LoginPage from './LoginPage';
+import SignUpPage from './SignUpPage';
+import Route from './Route';
+import Footer from './Footer';
 
 export class App extends Component {
   constructor(props) {
@@ -24,10 +27,22 @@ export class App extends Component {
   render() {
     return (
       <div className='ui container' style={{ marginTop: '10px' }}>
-        <Navbar />
-        <Searchbar onSubmit={this.onSearchSubmit} />
-        <SearchImages images={this.state.images} />
-        <LoginPage />
+        <Route path='/'>
+          <Navbar />
+          <Searchbar onSubmit={this.onSearchSubmit} />
+          <SearchImages images={this.state.images} />
+          <Footer />
+        </Route>
+        <Route path='/login'>
+          <Navbar />
+          <LoginPage />
+          <Footer />
+        </Route>
+        <Route path='/signup'>
+          <Navbar />
+          <SignUpPage />
+          <Footer />
+        </Route>
       </div>
     )
   }

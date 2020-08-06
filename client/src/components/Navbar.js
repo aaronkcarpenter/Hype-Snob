@@ -43,17 +43,26 @@ export class Navbar extends React.Component {
   }
   render(){
     return(
-      <div>
-        <ul className='Nav__Container'>
-        <h1 className='logo'>HYPESNOB</h1>
-          {/* <li><a className='header__link navbar__link--one' href='https://www.hypesnob.herokuapp.com'>HYPESNOB</a></li> */}
-          <li><a className='header__link navbar__link--two' href='https://www.hypesnob.herokuapp.com'>Discover</a></li>
-          <li><a className='header__link navbar__link--three' href='https://www.hypesnob.herokuapp.com'>Shop All</a></li>
-          <li><a className='header__link navbar__link--four' href='https://www.hypesnob.herokuapp.com'>Styles</a></li>
-          <Searchbar onSubmit={this.onSearchSubmit} />
-          {/* <SearchImages images={this.state.images} /> */}
-        </ul>
-      </div>
+      <>
+        <nav>
+          <header className='Nav__Container'>
+            <h1 className='logo'>
+              <a href='#'>HYPESNOB</a>
+            </h1>
+            <ul className='list-container'>
+              <li>
+                <span className='nav-links'>
+                  <a className='header__link navbar__link--two' href='https://www.hypesnob.herokuapp.com'>Discover</a>
+                </span>
+              </li>
+              <li><a className='header__link navbar__link--three' href='https://www.hypesnob.herokuapp.com'>Shop All</a></li>
+              <li><a className='header__link navbar__link--four' href='https://www.hypesnob.herokuapp.com'>Styles</a></li>
+              <Searchbar onSubmit={this.onSearchSubmit} />
+              {/* <SearchImages images={this.state.images} /> */}
+            </ul>
+          </header>
+        </nav>
+      </>
     )
   }
 }
