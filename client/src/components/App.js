@@ -7,6 +7,7 @@ import LoginPage from './LoginPage';
 import SignUpPage from './SignUpPage';
 import Route from './Route';
 import Footer from './Footer';
+import HomePage from './HomePage';
 
 export class App extends Component {
   constructor(props) {
@@ -35,12 +36,23 @@ export class App extends Component {
         </Route>
         <Route path='/login'>
           <Navbar />
+          <SearchImages images={this.state.images} />
+          <Searchbar onSubmit={this.onSearchSubmit} />
           <LoginPage />
           <Footer />
         </Route>
         <Route path='/signup'>
           <Navbar />
+          <Searchbar onSubmit={this.onSearchSubmit} />
+          <SearchImages images={this.state.images} />
           <SignUpPage />
+          <Footer />
+        </Route>
+        <Route path='/home'>
+          <Navbar />
+          <Searchbar onSubmit={this.onSearchSubmit} />
+          <SearchImages images={this.state.images} />
+          <HomePage />
           <Footer />
         </Route>
       </div>

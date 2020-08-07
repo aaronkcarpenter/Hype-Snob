@@ -1,0 +1,69 @@
+.hero-container{
+  height: 660px;
+  overflow: hidden;
+  position: relative;
+  background: url(../images/heroPic.png);
+  background-size: cover;
+  font-family: 'Overpass', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-subheader{
+  position: absolute;
+  bottom: 130px;
+  left: 90px;
+  font-size: 12px;
+}
+
+.hero-header{
+  position: absolute;
+  bottom: 80px;
+  left: 90px;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.hero-cta{
+  cursor: pointer;
+  position: absolute;
+  bottom: 80px;
+  right: 90px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 15px 50px;
+}
+
+.main-page-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.main-login-button{
+  /* border-right: 1px solid black; */
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  background-color: white;
+  border: none;
+}
+
+.main-signup-button{
+  /* border-right: 1px solid black; */
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 0px 0px 15px;
+  background-color: white;
+  border: none;
+}

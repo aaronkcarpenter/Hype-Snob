@@ -19,13 +19,13 @@ export class LoginPage extends Component {
             <input className='form-input' type='password'></input>
           </form>
           <div className='form-link'>
-            <a href="#/signup">CREATE ACCOUNT</a>
+            <a href="./signup">CREATE ACCOUNT</a>
           </div>
           <button className='demo'>
-            <a href='#'>DEMO USER</a>
+            <a href='./home'>DEMO USER</a>
           </button>
           <button className='login-button'>
-            <a href='#'>LOG IN</a>
+            <a href='./login'>LOG IN</a>
           </button>
           </div>
         </div>

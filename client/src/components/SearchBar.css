@@ -1,14 +1,18 @@
 .ui .segment{
-  /* border: 1px solid black; */
   font-family: Plain, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: 5.71;
   letter-spacing: normal;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: black;
   margin-right: 0px;
   text-decoration: none;
+  
+}
+
+label{
+  padding: 0 10px;
 }

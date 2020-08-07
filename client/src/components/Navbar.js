@@ -1,8 +1,10 @@
 import React from 'react';
-import './Navbar.css';
-import Searchbar from './Searchbar';
-import SearchImages from './SearchImages';
 import sneaker from '../api/sneaker';
+import './Navbar.css';
+import SearchImages from './SearchImages';
+import './SearchImages.css';
+import Searchbar from './Searchbar';
+import './SearchBar.css';
 
 // export const Navbar = () => {
 
@@ -44,24 +46,36 @@ export class Navbar extends React.Component {
   render(){
     return(
       <>
-        <nav>
-          <header className='Nav__Container'>
+        <header className='Nav__Container'>
+          <nav className='header-nav'>
             <h1 className='logo'>
-              <a href='#'>HYPESNOB</a>
+              <a href='./home'>HYPESNOB</a>
             </h1>
             <ul className='list-container'>
               <li>
                 <span className='nav-links'>
-                  <a className='header__link navbar__link--two' href='https://www.hypesnob.herokuapp.com'>Discover</a>
+                  <a className='header__link navbar__link--two' href='./home'>Discover</a>
                 </span>
               </li>
-              <li><a className='header__link navbar__link--three' href='https://www.hypesnob.herokuapp.com'>Shop All</a></li>
-              <li><a className='header__link navbar__link--four' href='https://www.hypesnob.herokuapp.com'>Styles</a></li>
-              <Searchbar onSubmit={this.onSearchSubmit} />
-              {/* <SearchImages images={this.state.images} /> */}
+              <li>
+                <span className='nav-links'>
+                  <a className='header__link navbar__link--three' href='./shop'>Shop All</a>
+                </span>
+              </li>
+              <li>
+                <span className='nav-links'>
+                  <a className='header__link navbar__link--four' href='./styles'>Styles</a>
+                </span>
+              </li>
+              <li>
+                <span className='nav-links'>
+                  <Searchbar className='header__link' onSubmit={this.onSearchSubmit} />
+                </span>
+              </li>
+              <li><SearchImages className='search__images' images={this.state.images} /></li>
             </ul>
-          </header>
-        </nav>
+          </nav>
+        </header>
       </>
     )
   }

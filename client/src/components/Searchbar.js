@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './SearchBar.css';
 import './SearchImages';
+import SearchImages from './SearchImages';
 
 export class Searchbar extends Component {
   constructor(props) {
@@ -26,9 +27,10 @@ export class Searchbar extends Component {
       <div className="ui segment">
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className='field'>
-            <label>Shoe Search</label>
+            <label>SEARCH</label>
             <input type='text'
               value={this.state.term} 
+              placeholder='Type To Search'
               onChange={e => this.setState({ term: e.target.value})} />
           </div> 
         </form>
