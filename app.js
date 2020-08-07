@@ -23,7 +23,7 @@ app.use(cors({ origin: true }));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
-app.use(home);
+// app.use(home);
 app.use(login);
 app.use(shop);
 app.use(signUp);
