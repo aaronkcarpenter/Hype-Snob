@@ -9,6 +9,17 @@
   font-weight: 400;
 }
 
+.fab{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f1ea";
+  color: white;
+}
+
+.fa-github{
+  /* color: salmon  */
+}
+
 .footer-links{
   display: flex;
   justify-content: center;

@@ -15,23 +15,24 @@ export class Footer extends Component {
           <ul className='footer-links'>
             <li className='footer-links-one'>
               <a href='https://www.linked.com/in/aaroncarpenter'>
-                <i className='fab-fa-linkedin-in'>
-                  ::before
+                <i className='fab fa-linkedin-in'>
+                  {/* ::before */}
                 </i>
               </a>
             </li>
             <li className='footer-links-one'>
               <a href='https://www.github.com/aaronkcarpenter'>
-                <i className='fab-fa-github'>
-                  ::before
+                <i className='fab fa-github'>
+                  {/* ::before */}
                 </i>
               </a>
             </li>
             <li className='footer-links-one'>
               <a href='http://www.aaronkcarpenter.com'>
-                <i className='fab-fa-user'>
-                  ::before
+                <i className='fab fa-user'>
+                  {/* ::before */}
                 </i>
+                {/* <FontAwesomeIcon icon={['fab', 'github']} /> */}
               </a>
             </li>
           </ul>

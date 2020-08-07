@@ -20,6 +20,8 @@
   display: flex;
   margin: auto 0px;
   overflow: hidden;
+  width: 90%;
+  align-self: center;
 }
 
 .input-container{

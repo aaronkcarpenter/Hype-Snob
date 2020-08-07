@@ -37,12 +37,21 @@ export class Navbar extends React.Component {
     };
   }
 
+  // onSearchSubmit = async (term) => {
+  //   const response = await sneaker.get('https://api.thesneakerdatabase.com/v1/sneakers?limit=100&gender=men')
+  //   console.log(response.data.results);
+
+  //   this.setState({ images: response.data.results });
+  // }
+
   onSearchSubmit = async (term) => {
-    const response = await sneaker.get('https://api.thesneakerdatabase.com/v1/sneakers?limit=100&gender=men')
+    const response = await sneaker.get('https://api.thesneakerdatabase.com/v1/sneakers?limit=100&brand=Jordan&gender=men&releaseYear=2019')
     console.log(response.data.results);
 
     this.setState({ images: response.data.results });
   }
+
+
   render(){
     return(
       <>

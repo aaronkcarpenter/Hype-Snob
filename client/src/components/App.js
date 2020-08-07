@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./FontawsomeIcons";
 import sneaker from '../api/sneaker';
 import Searchbar from './Searchbar';
 import SearchImages from './SearchImages';
@@ -8,6 +9,9 @@ import SignUpPage from './SignUpPage';
 import Route from './Route';
 import Footer from './Footer';
 import HomePage from './HomePage';
+import Shop from './Shop';
+import Styles from './Styles';
+
 
 export class App extends Component {
   constructor(props) {
@@ -32,6 +36,7 @@ export class App extends Component {
           <Navbar />
           <Searchbar onSubmit={this.onSearchSubmit} />
           <SearchImages images={this.state.images} />
+          <LoginPage />
           <Footer />
         </Route>
         <Route path='/login'>
@@ -53,6 +58,20 @@ export class App extends Component {
           <Searchbar onSubmit={this.onSearchSubmit} />
           <SearchImages images={this.state.images} />
           <HomePage />
+          <Footer />
+        </Route>
+        <Route path='/shop'>
+          <Navbar />
+          <Searchbar onSubmit={this.onSearchSubmit} />
+          <SearchImages images={this.state.images} />
+          <Shop />
+          <Footer />
+        </Route>
+        <Route path='/styles'>
+          <Navbar />
+          <Searchbar onSubmit={this.onSearchSubmit} />
+          <SearchImages images={this.state.images} />
+          <Styles />
           <Footer />
         </Route>
       </div>

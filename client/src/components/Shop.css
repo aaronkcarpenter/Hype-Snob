@@ -1,0 +1,80 @@
+body{
+  font-family: 'Josefin Sans', serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.shop-header{
+  display: flex;
+  justify-content: center;
+  /* max-width: 1440px; */
+  font-family: 'Source Serif Pro', serif;
+  font-size: 36px;
+  padding: 80px 0px 120px;
+}
+
+.sneaker-container{
+  display: flex;
+  max-width: 1264px;
+  margin: 0px auto;
+}
+
+.sneaker-items-container{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.sneaker-item{
+  outline: 1px solid black;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 315px;
+  height: 315px;
+}
+
+.sneaker-item-name{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin: 0px 10%;
+  font-family: 'Overpass', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.sneaker-item-image-container{
+  margin-top: 30px; 
+  overflow: hidden;
+}
+
+.sneaker-item-image{
+  /* width: 125%; */
+  width: 90%;
+  /* height: 105%; */
+  height: 100%;
+  /* margin-left: -30px; */
+}
+
+.load-more-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.load-more{
+  cursor: pointer;
+  display: flex;
+  text-transform: uppercase;
+  font-family: 'Overpass', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 17.5px 90px;
+  /* border: 1px solid black; */
+  justify-content: center;
+  background-color: white;
+}

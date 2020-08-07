@@ -13,7 +13,7 @@ export class SignUpPage extends Component {
     return (
       <div className='form-container'>
         <div className='image-container'>
-          <img src='https://images.unsplash.com/photo-1581619714043-c1289ada25f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80' alt='sneakers' className='sneakers' />
+          <img src='https://stockx.imgix.net/Air-Jordan-1-Retro-High-Bio-Hack.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1593581616' alt='sneakers' className='sneakers' />
         </div>
         <div className='input-container'>
           <h1 className='form-header'>CREATE AN ACCOUNT</h1>

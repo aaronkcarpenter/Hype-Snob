@@ -25,7 +25,7 @@ export class LoginPage extends Component {
             <a href='./home'>DEMO USER</a>
           </button>
           <button className='login-button'>
-            <a href='./login'>LOG IN</a>
+            <a href='./shop'>LOG IN</a>
           </button>
           </div>
         </div>

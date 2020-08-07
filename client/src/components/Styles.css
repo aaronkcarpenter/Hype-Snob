@@ -1,0 +1,44 @@
+.styles-container{
+  font-family: 'Source Serif Pro', serif;
+  /* max-width: 1440px; */
+}
+
+.styles-header{
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  padding: 80px 0px 30px;
+}
+
+.styles-subheader{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.styles-column-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 90px;
+}
+
+.styles-column{
+  display: flex;
+  min-width: 325px;
+  max-width: 325px;
+  height: 2800px;
+  flex-wrap: wrap;
+}
+
+.styles-column img{
+  max-width: 100%;
+  transition: all .5s ease-in-out;
+}
+
+.img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
