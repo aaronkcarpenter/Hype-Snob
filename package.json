@@ -15,7 +15,7 @@
     "migration:generate": "sequelize-cli migration:generate",
     "model:generate": "sequelize-cli model:generate",
     "seed:generate": "sequelize-cli seed:generate",
-    "start": "dotenv ./bin/www"
+    "start": "dotenv node ./bin/www"
   },
   "keywords": [],
   "author": "",
