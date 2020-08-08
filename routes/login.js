@@ -6,7 +6,7 @@ const asyncHandler = (handler) => (req, res, next) => handler(req, res, next).ca
 
 router.get('/login', asyncHandler(async (req, res) => {
   // res.send('Login Page');
-  res.render('/')
+  res.render('/login');
 }));
 
 module.exports = router;

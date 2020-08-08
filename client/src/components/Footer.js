@@ -38,8 +38,9 @@ export class Footer extends Component {
           </ul>
           <div className='real-site-container'>
             <p className='real-site-cta'>
-              HYPESNOB was created and highly inspired by the world renowned
-              GOAT.com, a site specializing in the purchasing and selling of
+              HypeSnob was created and highly inspired by the world renowned
+              GOAT.com, a site specializing in the celebration of sneaker culture,
+              as well as the process of purchasing and selling of
               in-demand kicks. To visit the original site, click the link below.
               <a href='https://www.goat.com' />
               <button class='goat-link-button'>Go to GOAT</button>

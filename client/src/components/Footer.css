@@ -9,7 +9,21 @@
   font-weight: 400;
 }
 
-.fab{
+/* .fab{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f1ea";
+  color: white;
+} */
+
+.fa-linkedin-in{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f08c";
+  color: white;
+}
+
+.fa-user{
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   content: "\f1ea";
@@ -17,14 +31,17 @@
 }
 
 .fa-github{
-  /* color: salmon  */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f09b";
+  color: white;
 }
 
 .footer-links{
   display: flex;
   justify-content: center;
   padding: 20px 0px;
-  margin-right: 80px;
+  /* margin-right: 80px; */
   list-style: none;
 }
 

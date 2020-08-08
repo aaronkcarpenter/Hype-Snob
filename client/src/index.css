@@ -2,5 +2,8 @@ body {
   font-family: GT-Sectra-Book, serif;
   background-color: #FFFFFF;
   color: rgb(11, 11, 11);
-
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  max-width: 1600px;
+  margin-left: 150px;
 }

@@ -10,7 +10,7 @@ const home = require('./routes/index');
 const login = require('./routes/login');
 const shop = require('./routes/shop');
 const signUp = require('./routes/signUp');
-const style = require('./routes/styles');
+const styles = require('./routes/styles');
 const wantList = require('./routes/wantList');
 const users = require('./routes/users');
 
@@ -25,10 +25,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Routes
 // app.use(home);
 app.use(login);
-app.use(shop);
-app.use(signUp);
-app.use(style);
-app.use(wantList);
+// app.use('/', login);
+app.use('/shop', shop);
+app.use('/signup', signUp);
+app.use('/styles', styles);
+app.use('/wantlist', wantList);
 app.use('/users', users);
 
 if (process.env.NODE_ENV === 'production') {

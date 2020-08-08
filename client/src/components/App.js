@@ -55,8 +55,8 @@ export class App extends Component {
         </Route>
         <Route path='/home'>
           <Navbar />
-          <Searchbar onSubmit={this.onSearchSubmit} />
-          <SearchImages images={this.state.images} />
+          {/* <Searchbar onSubmit={this.onSearchSubmit} /> */}
+          {/* <SearchImages images={this.state.images} /> */}
           <HomePage />
           <Footer />
         </Route>

@@ -8,7 +8,8 @@ const { asyncHandler, handleValidationErrors } = require('./utils');
 const { requireAuth } = require('../authorization');
 
 router.get('/shop', asyncHandler(async (req, res) => {
-  res.send('Shopping Page');
+  // res.send('Shopping Page');
+  res.render('/shop');
 }));
 
 // router.get("/shop", asyncHandler(async (req, res) => {
