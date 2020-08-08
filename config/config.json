@@ -1,14 +1,14 @@
 {
   "development": {
-    "username": "hypesnob_app",
+    "username": "hypesnob_user",
     "password": "f1r5tpa55word",
-    "database": "hypesnob_development",
+    "database": "hypesnob_dev",
     "host": "localhost",
     "dialect": "postgres",
     "seederStorage": "sequelize"
   },
   "test": {
-    "username": "hypesnob_app",
+    "username": "hypesnob_user",
     "password": "f1r5tpa55word",
     "database": "hypesnob_test",
     "host": "localhost",
