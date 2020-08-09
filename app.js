@@ -5,6 +5,12 @@ const cors = require('cors');
 const bodyParser = require("body-parser");
 const db = require('./db/models');
 
+const session = require('express-session');
+const { check, validationResult } = require('express-validator');
+
+const sessionRouter = require('./routes/api/login.js')
+const signUpRouter = require('./routes/api/signup.js')
+const loginRouter = require('./routes/api/login.js')
 
 const home = require('./routes/index');
 const login = require('./routes/login');
@@ -24,8 +30,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
 // app.use(home);
-app.use(login);
-// app.use('/', login);
+// app.use(login);
+
+//WHen you type to this route, take me to this route..
+app.use('/', login);
 app.use('/shop', shop);
 app.use('/signup', signUp);
 app.use('/styles', styles);
@@ -38,7 +46,6 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
-
 
 // Catch unhandled requests and forward to error handler.
 app.use((req, res, next) => {
