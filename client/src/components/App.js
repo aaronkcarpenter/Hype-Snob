@@ -74,6 +74,10 @@ export class App extends Component {
           <Styles />
           <Footer />
         </Route>
+        <Route path='/search'>
+          <Searchbar onSubmit={this.onSearchSubmit} />
+          <SearchImages images={this.state.images} />
+        </Route>
       </div>
     )
   }
