@@ -55,10 +55,10 @@
   padding: 10px 15px;
   background-color: white;
   border: none;
+  /* border-right: 1px solid black; */
 }
 
 .main-signup-button{
-  /* border-right: 1px solid black; */
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 500;

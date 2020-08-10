@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaGithub, FaLinkedinIn, FaRegUser } from 'react-icons/fa';
 import './Footer.css';
 
 export class Footer extends Component {
@@ -14,25 +15,18 @@ export class Footer extends Component {
         <div className='footer-container'>
           <ul className='footer-links'>
             <li className='footer-links-one'>
-              <a href='https://www.linked.com/in/aaroncarpenter'>
-                <i className='fab fa-linkedin-in'>
-                  {/* ::before */}
-                </i>
+              <a href='https://www.linkedin.com/in/aaronkcarpenter' target='_blank'>
+                <i className='fab fa-linkedin-in' > </i>
               </a>
             </li>
             <li className='footer-links-one'>
-              <a href='https://www.github.com/aaronkcarpenter'>
-                <i className='fab fa-github'>
-                  {/* ::before */}
-                </i>
+              <a href='https://www.github.com/aaronkcarpenter' target='_blank'>
+                <i className='fab fa-github'></i>
               </a>
             </li>
             <li className='footer-links-one'>
               <a href='http://www.aaronkcarpenter.com'>
-                <i className='fab fa-user'>
-                  {/* ::before */}
-                </i>
-                {/* <FontAwesomeIcon icon={['fab', 'github']} /> */}
+                <i className='fab fa-user' />
               </a>
             </li>
           </ul>
@@ -42,8 +36,9 @@ export class Footer extends Component {
               GOAT.com, a site specializing in the celebration of sneaker culture,
               as well as the process of purchasing and selling of
               in-demand kicks. To visit the original site, click the link below.
-              <a href='https://www.goat.com' />
+              <a href='https://www.goat.com' target='_blank'>
               <button class='goat-link-button'>Go to GOAT</button>
+              </a>
             </p>
           </div>
         </div>

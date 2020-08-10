@@ -9,15 +9,13 @@
   font-weight: 400;
 }
 
-/* .fab{
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: "\f1ea";
-  color: white;
-} */
+.fab:hover{
+  background-color: white;
+  color: black;
+}
 
 .fa-linkedin-in{
-  font-family: "Font Awesome 5 Free";
+  /* font-family: "Font Awesome 5 Free"; */
   font-weight: 400;
   content: "\f08c";
   color: white;
@@ -31,7 +29,7 @@
 }
 
 .fa-github{
-  font-family: "Font Awesome 5 Free";
+  /* font-family: "Font Awesome 5 Free"; */
   font-weight: 400;
   content: "\f09b";
   color: white;
@@ -48,7 +46,7 @@
 .footer-links-one{
   display: flex;
   margin: 10px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .footer-links-one a i{
@@ -88,4 +86,9 @@
   font-weight: bold;
   padding: 15px 50px;
   color: white;
+}
+
+.goat-link-button:hover{
+  background-color: white;
+  color: black;
 }
