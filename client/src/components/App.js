@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./FontawsomeIcons";
+// import "./FontawsomeIcons";
 import sneaker from '../api/sneaker';
 import Searchbar from './Searchbar';
 import SearchImages from './SearchImages';
@@ -36,7 +36,7 @@ export class App extends Component {
           <Navbar />
           <Searchbar onSubmit={this.onSearchSubmit} />
           <SearchImages images={this.state.images} />
-          <LoginPage />
+          <HomePage />
           <Footer />
         </Route>
         <Route path='/login'>

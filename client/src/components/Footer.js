@@ -25,7 +25,7 @@ export class Footer extends Component {
               </a>
             </li>
             <li className='footer-links-one'>
-              <a href='http://www.aaronkcarpenter.com'>
+              <a href='http://www.aaronkcarpenter.com' target='_blank'>
                 <i className='fab fa-user' />
               </a>
             </li>
@@ -34,7 +34,7 @@ export class Footer extends Component {
             <p className='real-site-cta'>
               HypeSnob was created and highly inspired by the world renowned
               GOAT.com, a site specializing in the celebration of sneaker culture,
-              as well as the process of purchasing and selling of
+              as well as the process of purchasing and selling
               in-demand kicks. To visit the original site, click the link below.
               <a href='https://www.goat.com' target='_blank'>
               <button class='goat-link-button'>Go to GOAT</button>
