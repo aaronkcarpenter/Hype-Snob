@@ -22,4 +22,4 @@ When a user reaches the site, they have the ability to log in and sign up. Thoug
 a user is allowed access to see various styles on she shopping screen, they are
 redirected if actually attempting to make a purchase.
 
-![Home Page](https://gifyu.com/image/gbdf)
+[![HomeScreen.gif](https://s8.gifyu.com/images/HomeScreen.gif)](https://gifyu.com/image/gbdf)
