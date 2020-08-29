@@ -29,4 +29,4 @@ You have 3 options if you would like to access HypeSnob. You can login with
 your email address and password, you can browse as a demo user, or you can create
 a new account.
 
-[![Screen-Recording-2020-08-29-at-10.49.44-AM.gif](https://s8.gifyu.com/images/Screen-Recording-2020-08-29-at-10.49.44-AM.gif)](https://gifyu.com/image/gsXn)
+[![LoginPage.gif](https://s8.gifyu.com/images/Screen-Recording-2020-08-29-at-10.49.44-AM.gif)](https://gifyu.com/image/gsXn)
