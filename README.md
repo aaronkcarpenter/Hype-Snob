@@ -29,4 +29,23 @@ You have 3 options if you would like to access HypeSnob. You can login with
 your email address and password, you can browse as a demo user, or you can create
 a new account.
 
+[![HomeScreen.gif](https://s8.gifyu.com/images/HomeScreen.gif)](https://gifyu.com/image/gbdf)
 [![LoginPage.gif](https://s8.gifyu.com/images/Screen-Recording-2020-08-29-at-10.49.44-AM.gif)](https://gifyu.com/image/gsXn)
+
+## Create Account Page
+Option 2 is creating a new account. You must have a valid email formatted correctly,
+and you'll be able to sign up.
+[![HomeScreen.gif](https://s8.gifyu.com/images/HomeScreen.gif)](https://gifyu.com/image/gbdf)
+
+## Demo User
+The final option is to browse as a demo user. Simply click the 'DEMO USER' button
+and you'll be able to peruse as long as you'd like. You can't shop or upload 
+your latest sneakerhead photos, but you can experience what it looks like.
+
+## Shopping Page
+
+[![HomeScreen.gif](https://s8.gifyu.com/images/HomeScreen.gif)](https://gifyu.com/image/gbdf)
+
+## Inspiration Photos Page
+
+[![HomeScreen.gif](https://s8.gifyu.com/images/HomeScreen.gif)](https://gifyu.com/image/gbdf)
