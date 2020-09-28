@@ -1,6 +1,6 @@
-const bearerToken = require('express-bearer-token');
-const jwt = require('jsonwebtoken');
+// const bearerToken = require('express-bearer-token');
+// const jwt = require('jsonwebtoken');
 
-const authenticated = [bearerToken()];
+// const authenticated = [bearerToken()];
 
-module.exports = { generateToken, authenticated };
+// module.exports = { generateToken, authenticated };
