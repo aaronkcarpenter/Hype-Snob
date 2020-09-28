@@ -38,12 +38,6 @@ module.exports = {
       year: {
         type: Sequelize.INTEGER
       },
-      media: {
-        type: Sequelize.STRING,
-        imageUrl: Sequelize.STRING,
-        smallImageUrl: Sequelize.STRING,
-        thumbUrl: Sequelize.STRING,
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
