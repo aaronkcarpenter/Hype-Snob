@@ -1,6 +1,7 @@
-#!/usr/local/bin/ node
+#!/usr/local/bin/env node
 
 const app = require('../app');
+// const app = require('../appTest');
 const db = require('../db/models');
 const http = require('http');
 

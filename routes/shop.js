@@ -5,7 +5,7 @@ const Op = require('sequelize').Op;
 
 const { check, validationResult } = require('express-validator');
 const { asyncHandler, handleValidationErrors } = require('./utils');
-const { requireAuth } = require('../authorization');
+const { requireAuth } = require('../auth');
 
 router.get('/shop', asyncHandler(async (req, res) => {
   // res.send('Shopping Page');

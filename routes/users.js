@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 const { check, validationResult } = require('express-validator');
 const { asyncHandler, handleValidationErrors } = require('./utils');
 const db = require('../db/models');
-const { getUserToken, requireAuth } = require('../authorization');
+const { getUserToken, requireAuth } = require('../auth');
 
 const router = express.Router();
 

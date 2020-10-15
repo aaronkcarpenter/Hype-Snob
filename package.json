@@ -2,7 +2,14 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
+  "main": "./bin/www",
+  "engines": {
+    "node": "13.12.0"
+  },
   "scripts": {
+    "start": "per-env",
+    "start:development": "nodemon -r dotenv/config ./bin/www",
+    "start:production": "./bin/www",
     "db:create": "dotenv sequelize-cli db:create",
     "db:drop": "dotenv sequelize-cli db:drop",
     "db:migrate": "dotenv sequelize-cli db:migrate",
@@ -10,12 +17,10 @@
     "db:redo": "npm run db:seed:undo:all && npm run db:migrate:undo:all && npm run db:migrate && npm run db:seed:all",
     "db:seed:all": "dotenv sequelize-cli db:seed:all",
     "db:seed:undo:all": "dotenv sequelize-cli db:seed:undo:all",
-    "dev": "dotenv nodemon ./bin/www",
     "heroku-postbuild": "npm install --prefix client && npm run build --prefix client && npm run db:redo",
     "migration:generate": "sequelize-cli migration:generate",
     "model:generate": "sequelize-cli model:generate",
-    "seed:generate": "sequelize-cli seed:generate",
-    "start": "dotenv node ./bin/www"
+    "seed:generate": "sequelize-cli seed:generate"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +39,7 @@
     "dotenv": "^8.2.0",
     "dotenv-cli": "^3.2.0",
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
     "express-bearer-token": "^2.4.0",
     "express-session": "^1.17.1",
     "express-validator": "^6.6.1",
@@ -45,12 +51,15 @@
     "path": "^0.12.7",
     "per-env": "^1.0.2",
     "pg": "^8.3.0",
+    "react": "^16.14.0",
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
     "sequelize": "^6.3.4",
-    "sequelize-cli": "^6.2.0"
+    "sequelize-cli": "^6.2.0",
+    "uuid": "^8.3.1"
   },
   "devDependencies": {
+    "debug": "^4.2.0",
     "nodemon": "^2.0.4"
   }
 }
