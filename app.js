@@ -14,6 +14,7 @@ const signUp = require('./routes/signUp');
 const styles = require('./routes/styles');
 const wantList = require('./routes/wantList');
 const users = require('./routes/users');
+const routes = require('./routes');
 
 const app = express();
 
@@ -24,19 +25,20 @@ app.use(cors({ origin: true }));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
-app.use(home);
+app.use(routes);
+// app.use(home);
 // app.use(login);
 // app.use('/', login);
-app.use('/shop', shop);
-app.use('/signup', signUp);
-app.use('/styles', styles);
-app.use('/wantlist', wantList);
-app.use('/users', users);
-app.use('/login', login);
+// app.use('/shop', shop);
+// app.use('/signup', signUp);
+// app.use('/styles', styles);
+// app.use('/wantlist', wantList);
+// app.use('/users', users);
+// app.use('/login', login);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
-  app.get('/', (req, res) => {
+  app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
