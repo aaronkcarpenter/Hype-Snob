@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "per-env",
-    "start:development": "nodemon -r dotenv/config ./bin/www",
+    "start:development": "dotenv nodemon ./bin/www",
     "start:production": "./bin/www",
     "db:create": "dotenv sequelize-cli db:create",
     "db:drop": "dotenv sequelize-cli db:drop",
