@@ -35,7 +35,6 @@ app.use('/signup', signUp);
 app.use('/styles', styles);
 app.use('/wantlist', wantList);
 app.use('/users', users);
-app.use('/login', login);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
