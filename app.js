@@ -30,7 +30,7 @@ app.use(routes);
 // app.use(login);
 // app.use('/', login);
 // app.use('/shop', shop);
-// app.use('/signup', signUp);
+app.use('/signup', signUp);
 // app.use('/styles', styles);
 // app.use('/wantlist', wantList);
 // app.use('/users', users);
