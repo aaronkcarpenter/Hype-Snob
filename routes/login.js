@@ -1,18 +1,18 @@
-// const express = require('express');
+const express = require('express');
 
-// const router = express.Router();
+const router = express.Router();
 // const { User } = require('../../db/models');
 // const cookieParser = require('cookie-parser');
 
-// const asyncHandler = (handler) => (req, res, next) => handler(req, res, next).catch(next);
+const asyncHandler = (handler) => (req, res, next) => handler(req, res, next).catch(next);
 
 // router.use(requireAuth);
 // router.use(cookieParser());
 
-// router.get('/login', asyncHandler(async (req, res) => {
-//   // res.send('Login Page');
-//   res.render('/login');
-// }));
+router.get('/login', asyncHandler(async (req, res) => {
+  // res.send('Login Page');
+  res.render('/login');
+}));
 
 // router.post('/', asyncHandler(async (req, res) => {
 //   const { email, password } = req.body;
