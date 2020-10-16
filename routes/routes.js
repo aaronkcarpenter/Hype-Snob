@@ -6,7 +6,8 @@ router.get('/', (req, res) => {
 });
 
 router.get('/signup', (req, res) => {
-  res.send('Sign Up Page');
+  // res.send('Sign Up Page');
+  res.render('/signup');
 });
 
 router.get('/login', (req, res) => {
