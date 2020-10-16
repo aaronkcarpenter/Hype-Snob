@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(routes);
 // app.use(home);
 // app.use(login);
-app.use('/login',login);
+app.use('/login',routes);
 // app.use('/', login);
 app.use('/shop', shop);
 app.use('/signup', signUp);
