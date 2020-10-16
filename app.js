@@ -8,7 +8,7 @@ const db = require('./db/models');
 
 const home = require('./routes/index');
 const login = require('./routes/login');
-const login = require('./routes/routes');
+// const login = require('./routes/routes');
 const shop = require('./routes/shop');
 const signUp = require('./routes/signUp');
 const styles = require('./routes/styles');
