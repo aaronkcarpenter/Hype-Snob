@@ -7,7 +7,7 @@ const db = require('./db/models');
 
 
 const home = require('./routes/index');
-// const login = require('./routes/login');
+const login = require('./routes/login');
 const login = require('./routes/routes');
 const shop = require('./routes/shop');
 const signUp = require('./routes/signUp');
@@ -27,14 +27,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Routes
 app.use(routes);
 // app.use(home);
-// app.use(login);
+app.use(login);
 // app.use('/', login);
-// app.use('/shop', shop);
+app.use('/shop', shop);
 app.use('/signup', signUp);
-// app.use('/styles', styles);
-// app.use('/wantlist', wantList);
-// app.use('/users', users);
-// app.use('/login', login);
+app.use('/styles', styles);
+app.use('/wantlist', wantList);
+app.use('/users', users);
+app.use('/login', login);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
