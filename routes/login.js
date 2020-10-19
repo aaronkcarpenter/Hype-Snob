@@ -38,6 +38,6 @@ router.get('/login', asyncHandler(async (req, res) => {
 
 // }));
 
-// module.exports = router;
+module.exports = router;
 
 //Go to Users for actual code. This is not being used.

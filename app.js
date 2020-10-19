@@ -4,6 +4,7 @@ const { environment } = require('./config');
 const cors = require('cors');
 const bodyParser = require("body-parser");
 const db = require('./db/models');
+const path = require('path');
 
 
 const home = require('./routes/index');
@@ -13,7 +14,7 @@ const shop = require('./routes/shop');
 const signUp = require('./routes/signUp');
 const styles = require('./routes/styles');
 const wantList = require('./routes/wantList');
-const users = require('./routes/users');
+const users = require('./routes/api/users');
 const routes = require('./routes');
 
 const app = express();
@@ -25,17 +26,21 @@ app.use(cors({ origin: true }));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
-app.use(routes);
+// app.use(routes);
 // app.use(home);
 // app.use(login);
-app.use('/login',routes);
+// app.use('/login',routes);
 // app.use('/', login);
-app.use('/shop', shop);
-app.use('/signup', signUp);
-app.use('/styles', styles);
-app.use('/wantlist', wantList);
-app.use('/users', users);
+// app.use('/shop', shop);
+// app.use(shop);
+// app.use('/signup', signUp);
+// app.use(signUp);
+// app.use('/styles', styles);
+// app.use('/wantlist', wantList);
+// app.use('/users', users);
+app.use('/api/users', users);
 
+// Serve static assets in production 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
   app.get('*', (req, res) => {

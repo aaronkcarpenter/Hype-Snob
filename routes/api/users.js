@@ -1,9 +1,9 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const { check, validationResult } = require('express-validator');
-const { asyncHandler, handleValidationErrors } = require('./utils');
-const db = require('../db/models');
-const { getUserToken, requireAuth } = require('../auth');
+const { asyncHandler, handleValidationErrors } = require('../utils');
+const db = require('../../db/models');
+const { getUserToken, requireAuth } = require('../../auth');
 
 const router = express.Router();
 
@@ -68,8 +68,8 @@ router.post(
 );
 
 
-router.get('/login', asyncHandler(async (req, res) => {
-  res.send('Login Page');
+router.get('/', asyncHandler(async (req, res) => {
+  res.send('User Route');
 }));
 
 
