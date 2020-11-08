@@ -11,3 +11,15 @@
   margin-right: 0px;
   text-decoration: none;
 }
+
+/* media queries - Normal */
+@media(min-width: 769px) and (max-width: 1200px) {
+  body{
+    /* background: green; */
+  }
+
+  .ui .segment{
+    padding-left: 20px;
+    line-height: 0;
+  }
+}

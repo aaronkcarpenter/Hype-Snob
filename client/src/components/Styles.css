@@ -42,3 +42,34 @@
   height: auto;
 }
 
+/* media queries - Normal */
+@media(min-width: 769px) and (max-width: 1200px) {
+  body{
+    /* background: green; */
+    margin: 0;
+  }
+
+  .styles-container{
+    /* width: 50vh; */
+
+
+  }
+
+  .styles-column-container{
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .styles-column{
+    width: 50vh;
+    /* height: 20vh; */
+  }
+
+  .styles-column .img{
+    /* width: 50%; */
+  }
+
+  .style-image{
+  }
+}
+

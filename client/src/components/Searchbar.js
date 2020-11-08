@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './SearchBar.css';
 import './SearchImages';
-import SearchImages from './SearchImages';
+// import SearchImages from './SearchImages';
 
 export class Searchbar extends Component {
   constructor(props) {

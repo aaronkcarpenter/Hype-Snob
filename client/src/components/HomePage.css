@@ -67,3 +67,65 @@
   background-color: white;
   border: none;
 }
+
+/* media queries - Smartphones */
+@media only screen and (max-width: 500px) {
+  body{
+    /* background: orange; */
+  }
+
+  .hero-container{
+    position: absolute;
+
+  }
+
+  .hero-subheader{
+  }
+}
+
+/* media queries - Tablets */
+@media(min-width: 501px) and (max-width: 768px) {
+  body{
+    /* background: blue; */
+  }
+}
+
+/* media queries - Normal */
+@media(min-width: 769px) and (max-width: 1200px) {
+  body{
+    /* background: green; */
+  }
+
+  .hero-container{
+    width: 100%;
+    background-size: 50%;
+    /* height: 50vh; */
+    /* overflow: scroll; */
+
+  }
+
+  .main-page-container{
+
+  }
+
+  .hero-cta{
+    margin: -50px 50px;
+  }
+}
+
+/* media queries - widescreen */
+@media only screen and (min-width: 1201px) {
+  body{
+    /* background: black; */
+  }
+}
+
+/* media queries - Landscape */
+@media only screen and (max-height: 500px) {
+  body{
+    /* background: black; */
+  }
+}
+
+
+

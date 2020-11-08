@@ -14,7 +14,7 @@ export class Shop extends Component {
         <p className='shop-header'>Shop All</p>
         <div className='sneaker-container'>
           <ul className='sneaker-items-container'>
-            <a href='/comingsoon'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -24,7 +24,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -34,7 +34,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -44,7 +44,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -54,7 +54,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -64,7 +64,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -74,7 +74,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -84,7 +84,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -94,7 +94,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -104,7 +104,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -114,7 +114,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -124,7 +124,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -134,7 +134,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -144,7 +144,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -154,7 +154,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -164,7 +164,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -174,7 +174,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -184,7 +184,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -194,7 +194,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -204,7 +204,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
@@ -214,7 +214,7 @@ export class Shop extends Component {
                 </li>
               </div>
             </a>
-            <a href='#'>
+            <a href='/shop'>
               <div className='sneaker-item'>
                 <li className='sneaker-item-name'>
                   <div className='sneaker-item-image-container'>
