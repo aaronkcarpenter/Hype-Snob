@@ -25,7 +25,7 @@ export class Footer extends Component {
               </a>
             </li>
             <li className='footer-links-one'>
-              <a href='https://www.aaronkcarpenter.github.io' target='_blank' rel='noopener noreferrer'>
+              <a href='https://aaronkcarpenter.github.io' target='_blank' rel='noopener noreferrer'>
                 <i className='fab fa-user' />
               </a>
             </li>
